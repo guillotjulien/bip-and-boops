@@ -14,9 +14,7 @@ import { PageController } from './controllers/page/page.controller';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:57202', {
-      dbName: 'analytics',
-    }),
+    MongooseModule.forRoot('mongodb://127.0.0.1:57202/analytics?directConnection=true'),
     MongooseModule.forFeature([
       {
         name: PageView.name,
