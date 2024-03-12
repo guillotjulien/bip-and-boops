@@ -82,8 +82,8 @@ export class ViewService {
     startingFrom: Date
   ): Promise<number> {
     const uniqueVisitorsForPageInPeriod = await this.pageViewModel
-      .find({ UTCDateTime: { $gte: startingFrom } })
-      .distinct('userID', { pageID })
+      .find({ UTCDateTime: { $gte: startingFrom }, pageID })
+      .distinct('userID')
       .exec();
 
     return uniqueVisitorsForPageInPeriod.length;
