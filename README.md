@@ -1,5 +1,3 @@
-# Veeva-Test
-
 ## Quickstart
 
 ### API
