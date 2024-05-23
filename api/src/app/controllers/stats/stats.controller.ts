@@ -20,7 +20,7 @@ export class StatsController {
     const startDate = new Date(Date.now() - periodDuration);
     return {
       periodDuration: periodDuration,
-      value: await this.viewService.getUserCountInPeriods(
+      value: await this.viewService.getUserCountInPeriod(
         params.pageID,
         startDate
       ),

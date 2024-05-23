@@ -71,13 +71,13 @@ export class ViewService {
   }
 
   /**
-   * getUserCountInPeriods returns the number of users having visited a given
+   * getUserCountInPeriod returns the number of users having visited a given
    * page in a given period.
    *
    * @param startingFrom represents the date starting from which we want to
    * retrieve results.
    */
-  async getUserCountInPeriods(
+  async getUserCountInPeriod(
     pageID: string,
     startingFrom: Date
   ): Promise<number> {
